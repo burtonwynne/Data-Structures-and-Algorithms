@@ -1,11 +1,11 @@
 package com.burton.wynne.linkedlist;
 
-public class LinkedList {
-	private Node first;
-	private Node last;
+public class LinkedList<T> {
+	private Node<T> first;
+	private Node<T> last;
 	private int size = 0;
 	
-	public void add(Node node){
+	public void add(Node<T> node){
 		if(first == null){
 			first = node;
 			last = node;
@@ -21,16 +21,16 @@ public class LinkedList {
 		return size;
 	}
 	
-	public Node getFirst(){
+	public Node<T> getFirst(){
 		return first;
 	}
 	
-	public Node getLast(){
+	public Node<T> getLast(){
 		return last;
 	}
-	public Node find(Object value){
-		Node foundNode = null, currentNode = first;
-		Object currentValue;
+	public Node<T> find(T value){
+		Node<T> foundNode = null, currentNode = first;
+		T currentValue;
 		while(currentNode != null){
 			currentValue = currentNode.getValue();
 			if(value.equals(currentValue)){
@@ -42,11 +42,31 @@ public class LinkedList {
 		return foundNode;
 	}
 	
-	public Node remove(Object value){
-		Node removedNode = find(value);
+	public void reverse(){
+		last = first;
+		reverse2(first);
+	}
+	
+	public Node<T> reverse2(Node<T> node){
+		if(node.getNext() == null){
+			first = node;
+			return node;
+		}else{
+			node.setPrevious(node.getNext());
+			reverse2(node.getNext()).setNext(node);
+			return node;
+		}
+	}
+	
+	public void print(){
+		
+	}
+	
+	public Node<T> remove(T value){
+		Node<T> removedNode = find(value);
 		if(removedNode != null){
-			Node previous = removedNode.getPrevious();
-			Node next = removedNode.getNext();
+			Node<T> previous = removedNode.getPrevious();
+			Node<T> next = removedNode.getNext();
 			if(previous != null){
 				previous.setNext(next); 
 			}
