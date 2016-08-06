@@ -1,31 +1,31 @@
 package com.burton.wynne.linkedlist;
 
-public class Node {
-	private Object value;
-	private Node next;
-	private Node previous;
+public class Node<T> {
+	private T value;
+	private Node<T> next;
+	private Node<T> previous;
 	
-	public Node(Object value){
+	public Node(T value){
 		this.value = value;
 	}
 	
-	public Object getValue(){
+	public T getValue(){
 		return value;
 	}
 	
-	public Node getNext(){
+	public Node<T> getNext(){
 		return next;
 	}
 	
-	public void setNext(Node node){
+	public void setNext(Node<T> node){
 		this.next = node;
 	}
 	
-	public Node getPrevious(){
+	public Node<T> getPrevious(){
 		return previous;
 	}
 	
-	public void setPrevious(Node node){
+	public void setPrevious(Node<T> node){
 		this.previous = node;
 	}
 }
