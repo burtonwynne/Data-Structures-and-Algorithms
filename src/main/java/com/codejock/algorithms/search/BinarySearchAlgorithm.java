@@ -1,4 +1,4 @@
-package com.burton.wynne.search;
+package com.codejock.algorithms.search;
 
 import java.util.logging.Logger;
 
