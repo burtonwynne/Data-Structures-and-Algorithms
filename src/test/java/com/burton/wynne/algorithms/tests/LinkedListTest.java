@@ -6,8 +6,8 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
-import com.burton.wynne.linkedlist.LinkedList;
-import com.burton.wynne.linkedlist.Node;
+import com.codejock.algorithms.linkedlist.LinkedList;
+import com.codejock.algorithms.linkedlist.Node;
 
 public class LinkedListTest {
 	private Logger logger= Logger.getLogger(this.getClass().getSimpleName());

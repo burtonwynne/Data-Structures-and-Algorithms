@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.burton.wynne.hashtable.Entry;
-import com.burton.wynne.hashtable.Hashtable;
+import com.codejock.algorithms.hashtable.Entry;
+import com.codejock.algorithms.hashtable.Hashtable;
 
 public class HashtableTest {
 

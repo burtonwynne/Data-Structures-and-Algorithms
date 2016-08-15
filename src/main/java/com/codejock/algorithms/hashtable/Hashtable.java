@@ -1,4 +1,4 @@
-package com.burton.wynne.hashtable;
+package com.codejock.algorithms.hashtable;
 import java.util.LinkedList;
 
 

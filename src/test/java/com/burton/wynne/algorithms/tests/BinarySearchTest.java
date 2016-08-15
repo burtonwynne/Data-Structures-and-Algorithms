@@ -15,7 +15,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.burton.wynne.search.BinarySearchAlgorithm;
+import com.codejock.algorithms.search.BinarySearchAlgorithm;
+
+
 
 /**
  * @author burtonwynne

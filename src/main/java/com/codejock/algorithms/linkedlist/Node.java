@@ -1,4 +1,4 @@
-package com.burton.wynne.linkedlist;
+package com.codejock.algorithms.linkedlist;
 
 public class Node<T> {
 	private T value;
